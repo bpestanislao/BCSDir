@@ -25,9 +25,11 @@ D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\bin\Deb
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\bin\Debug\netcoreapp2.0\BCS.Directory.CORE.dll
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\bin\Debug\netcoreapp2.0\BCS.Directory.DAO.dll
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\bin\Debug\netcoreapp2.0\BCS.Directory.Service.dll
+D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\bin\Debug\netcoreapp2.0\System.Net.Http.Formatting.dll
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\bin\Debug\netcoreapp2.0\BCS.Directory.CORE.pdb
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\bin\Debug\netcoreapp2.0\BCS.Directory.Service.pdb
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\bin\Debug\netcoreapp2.0\BCS.Directory.DAO.pdb
+D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\bin\Debug\netcoreapp2.0\System.Net.Http.Formatting.xml
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\obj\Debug\netcoreapp2.0\BCS.Directory.APP.csprojResolveAssemblyReference.cache
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\obj\Debug\netcoreapp2.0\BCS.Directory.APP.csproj.CoreCompileInputs.cache
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
@@ -36,5 +38,3 @@ D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\obj\Deb
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\obj\Debug\netcoreapp2.0\BCS.Directory.APP.csproj.CopyComplete
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\obj\Debug\netcoreapp2.0\BCS.Directory.APP.dll
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\obj\Debug\netcoreapp2.0\BCS.Directory.APP.pdb
-D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\bin\Debug\netcoreapp2.0\System.Net.Http.Formatting.dll
-D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\bin\Debug\netcoreapp2.0\System.Net.Http.Formatting.xml

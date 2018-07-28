@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 using BCS.Directory.APP.Mapper;
 using BCS.Directory.APP.Models.ViewModels;
 using BCS.Directory.CORE.Entity;
+using BCS.Directory.Service;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BCS.Directory.APP.Controllers
 {
     public class EmployeeController : Controller
     {
+        IEmployeeService _employeeService;
+        public EmployeeController(IEmployeeService employeeService)
+        {
+            _employeeService = employeeService;
+        }
         public IActionResult Index()
         {
             return View();
@@ -60,6 +66,34 @@ namespace BCS.Directory.APP.Controllers
             return Json(new { data = "" });
         }
 
+
+        public JsonResult GetAllSaveActiveEmployees()
+        {
+            try
+            {
+                var response = _employeeService.GetAllActiveEmployees();
+                var data = EmployeeMapper.Convert(response);         
+                return Json(new { data = data });
+            }
+            catch (Exception e)
+            {
+                return Json(new { IsSuccess = false });
+            }
+        }
+
+        public JsonResult GetEmployeeById(int id)
+        {
+            try
+            {
+                var response = _employeeService.GetEmployeeById(id);
+                var mapData = EmployeeMapper.Convert(response);
+                return Json(new { data = mapData });
+            }
+            catch (Exception e)
+            {
+                return Json(new { IsSuccess = false });
+            }
+        }
 
     }
 }

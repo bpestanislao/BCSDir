@@ -11,22 +11,23 @@ namespace BCS.Directory.APP.Mapper
     {
         public static Employee Convert(EmployeeViewModel employeeViewModel)
         {
-            return new Employee{
-                 Age = employeeViewModel.Age,
-                 Address = employeeViewModel.Address,
-                 Birthdate = employeeViewModel.Birthdate,
-                 CivilStatus = employeeViewModel.CivilStatus,
-                 Country = employeeViewModel.Country,
-                 FirstName = employeeViewModel.FirstName,
-                 Gender = employeeViewModel.Gender,
-                 HobbiesAndInterest = employeeViewModel.HobbiesAndInterest,
-                 LanguagesSpoken = employeeViewModel.LanguagesSpoken,
-                 LastName = employeeViewModel.LastName,
-                 PhoneNumber = employeeViewModel.PhoneNumber,
-                 State = employeeViewModel.State,
-                 UserType = employeeViewModel.UserType,
-                 Department = employeeViewModel.Department,
-                 HireDate = employeeViewModel.HireDate,
+            return new Employee
+            {
+                Age = employeeViewModel.Age,
+                Address = employeeViewModel.Address,
+                Birthdate = employeeViewModel.Birthdate,
+                CivilStatus = employeeViewModel.CivilStatus,
+                Country = employeeViewModel.Country,
+                FirstName = employeeViewModel.FirstName,
+                Gender = employeeViewModel.Gender,
+                HobbiesAndInterest = employeeViewModel.HobbiesAndInterest,
+                LanguagesSpoken = employeeViewModel.LanguagesSpoken,
+                LastName = employeeViewModel.LastName,
+                PhoneNumber = employeeViewModel.PhoneNumber,
+                State = employeeViewModel.State,
+                UserType = employeeViewModel.UserType,
+                Department = employeeViewModel.Department,
+                HireDate = employeeViewModel.HireDate,
             };
         }
         public static List<EmployeeViewModel> Convert(List<Employee> employees)
@@ -34,7 +35,9 @@ namespace BCS.Directory.APP.Mapper
             List<EmployeeViewModel> mapData = new List<EmployeeViewModel>();
             foreach (var item in employees)
             {
-                mapData.Add(new EmployeeViewModel() {
+                mapData.Add(new EmployeeViewModel()
+                {
+                    Id = item.Id,
                     Age = item.Age,
                     Address = item.Address,
                     Birthdate = item.Birthdate,
@@ -55,5 +58,27 @@ namespace BCS.Directory.APP.Mapper
             return mapData;
         }
 
+        public static EmployeeViewModel Convert(Employee employee)
+        {
+            return new EmployeeViewModel()
+            {
+                Id = employee.Id,
+                Age = employee.Age,
+                Address = employee.Address,
+                Birthdate = employee.Birthdate,
+                CivilStatus = employee.CivilStatus,
+                Country = employee.Country,
+                FirstName = employee.FirstName,
+                Gender = employee.Gender,
+                HobbiesAndInterest = employee.HobbiesAndInterest,
+                LanguagesSpoken = employee.LanguagesSpoken,
+                LastName = employee.LastName,
+                PhoneNumber = employee.PhoneNumber,
+                State = employee.State,
+                UserType = employee.UserType,
+                Department = employee.Department,
+                HireDate = employee.HireDate
+            };
+        }
     }
 }
