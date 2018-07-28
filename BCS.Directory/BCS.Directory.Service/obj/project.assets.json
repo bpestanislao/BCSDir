@@ -12703,11 +12703,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\bestanislao\\BCS\\Training\\Project\\BCS.Directory\\BCS.Directory.Service\\BCS.Directory.Service.csproj",
+      "projectUniqueName": "D:\\bestanislao\\BCS\\Training\\Project\\Repo\\BCS.Directory\\BCS.Directory.Service\\BCS.Directory.Service.csproj",
       "projectName": "BCS.Directory.Service",
-      "projectPath": "D:\\bestanislao\\BCS\\Training\\Project\\BCS.Directory\\BCS.Directory.Service\\BCS.Directory.Service.csproj",
+      "projectPath": "D:\\bestanislao\\BCS\\Training\\Project\\Repo\\BCS.Directory\\BCS.Directory.Service\\BCS.Directory.Service.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\bestanislao\\BCS\\Training\\Project\\BCS.Directory\\BCS.Directory.Service\\obj\\",
+      "outputPath": "D:\\bestanislao\\BCS\\Training\\Project\\Repo\\BCS.Directory\\BCS.Directory.Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12727,11 +12727,11 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\bestanislao\\BCS\\Training\\Project\\BCS.Directory\\BCS.Directory.CORE\\BCS.Directory.CORE.csproj": {
-              "projectPath": "D:\\bestanislao\\BCS\\Training\\Project\\BCS.Directory\\BCS.Directory.CORE\\BCS.Directory.CORE.csproj"
+            "D:\\bestanislao\\BCS\\Training\\Project\\Repo\\BCS.Directory\\BCS.Directory.CORE\\BCS.Directory.CORE.csproj": {
+              "projectPath": "D:\\bestanislao\\BCS\\Training\\Project\\Repo\\BCS.Directory\\BCS.Directory.CORE\\BCS.Directory.CORE.csproj"
             },
-            "D:\\bestanislao\\BCS\\Training\\Project\\BCS.Directory\\BCS.Directory.DAO\\BCS.Directory.DAO.csproj": {
-              "projectPath": "D:\\bestanislao\\BCS\\Training\\Project\\BCS.Directory\\BCS.Directory.DAO\\BCS.Directory.DAO.csproj"
+            "D:\\bestanislao\\BCS\\Training\\Project\\Repo\\BCS.Directory\\BCS.Directory.DAO\\BCS.Directory.DAO.csproj": {
+              "projectPath": "D:\\bestanislao\\BCS\\Training\\Project\\Repo\\BCS.Directory\\BCS.Directory.DAO\\BCS.Directory.DAO.csproj"
             }
           }
         }

@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\bestanislao\\BCS\\Training\\Project\\BCS.Directory\\BCS.Directory.CORE\\BCS.Directory.CORE.csproj",
+      "projectUniqueName": "D:\\bestanislao\\BCS\\Training\\Project\\Repo\\BCS.Directory\\BCS.Directory.CORE\\BCS.Directory.CORE.csproj",
       "projectName": "BCS.Directory.CORE",
-      "projectPath": "D:\\bestanislao\\BCS\\Training\\Project\\BCS.Directory\\BCS.Directory.CORE\\BCS.Directory.CORE.csproj",
+      "projectPath": "D:\\bestanislao\\BCS\\Training\\Project\\Repo\\BCS.Directory\\BCS.Directory.CORE\\BCS.Directory.CORE.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\bestanislao\\BCS\\Training\\Project\\BCS.Directory\\BCS.Directory.CORE\\obj\\",
+      "outputPath": "D:\\bestanislao\\BCS\\Training\\Project\\Repo\\BCS.Directory\\BCS.Directory.CORE\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

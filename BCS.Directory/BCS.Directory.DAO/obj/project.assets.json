@@ -686,11 +686,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\bestanislao\\BCS\\Training\\Project\\BCS.Directory\\BCS.Directory.DAO\\BCS.Directory.DAO.csproj",
+      "projectUniqueName": "D:\\bestanislao\\BCS\\Training\\Project\\Repo\\BCS.Directory\\BCS.Directory.DAO\\BCS.Directory.DAO.csproj",
       "projectName": "BCS.Directory.DAO",
-      "projectPath": "D:\\bestanislao\\BCS\\Training\\Project\\BCS.Directory\\BCS.Directory.DAO\\BCS.Directory.DAO.csproj",
+      "projectPath": "D:\\bestanislao\\BCS\\Training\\Project\\Repo\\BCS.Directory\\BCS.Directory.DAO\\BCS.Directory.DAO.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\bestanislao\\BCS\\Training\\Project\\BCS.Directory\\BCS.Directory.DAO\\obj\\",
+      "outputPath": "D:\\bestanislao\\BCS\\Training\\Project\\Repo\\BCS.Directory\\BCS.Directory.DAO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -710,8 +710,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\bestanislao\\BCS\\Training\\Project\\BCS.Directory\\BCS.Directory.CORE\\BCS.Directory.CORE.csproj": {
-              "projectPath": "D:\\bestanislao\\BCS\\Training\\Project\\BCS.Directory\\BCS.Directory.CORE\\BCS.Directory.CORE.csproj"
+            "D:\\bestanislao\\BCS\\Training\\Project\\Repo\\BCS.Directory\\BCS.Directory.CORE\\BCS.Directory.CORE.csproj": {
+              "projectPath": "D:\\bestanislao\\BCS\\Training\\Project\\Repo\\BCS.Directory\\BCS.Directory.CORE\\BCS.Directory.CORE.csproj"
             }
           }
         }
