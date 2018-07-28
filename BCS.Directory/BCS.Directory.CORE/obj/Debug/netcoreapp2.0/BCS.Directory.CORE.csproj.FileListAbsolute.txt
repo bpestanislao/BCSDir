@@ -1,0 +1,12 @@
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.CORE\bin\Debug\netcoreapp2.0\BCS.Directory.CORE.deps.json
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.CORE\bin\Debug\netcoreapp2.0\BCS.Directory.CORE.dll
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.CORE\bin\Debug\netcoreapp2.0\BCS.Directory.CORE.pdb
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.CORE\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.dll
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.CORE\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.xml
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.CORE\obj\Debug\netcoreapp2.0\BCS.Directory.CORE.csproj.CoreCompileInputs.cache
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.CORE\obj\Debug\netcoreapp2.0\BCS.Directory.CORE.AssemblyInfoInputs.cache
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.CORE\obj\Debug\netcoreapp2.0\BCS.Directory.CORE.AssemblyInfo.cs
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.CORE\obj\Debug\netcoreapp2.0\BCS.Directory.CORE.csproj.CopyComplete
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.CORE\obj\Debug\netcoreapp2.0\BCS.Directory.CORE.dll
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.CORE\obj\Debug\netcoreapp2.0\BCS.Directory.CORE.pdb
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.CORE\obj\Debug\netcoreapp2.0\BCS.Directory.CORE.csprojResolveAssemblyReference.cache

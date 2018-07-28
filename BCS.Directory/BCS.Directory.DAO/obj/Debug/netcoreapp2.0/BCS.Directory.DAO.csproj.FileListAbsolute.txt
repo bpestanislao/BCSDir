@@ -1,0 +1,14 @@
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.DAO\bin\Debug\netcoreapp2.0\BCS.Directory.DAO.deps.json
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.DAO\bin\Debug\netcoreapp2.0\BCS.Directory.DAO.dll
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.DAO\bin\Debug\netcoreapp2.0\BCS.Directory.DAO.pdb
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.DAO\bin\Debug\netcoreapp2.0\BCS.Directory.CORE.dll
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.DAO\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.dll
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.DAO\bin\Debug\netcoreapp2.0\BCS.Directory.CORE.pdb
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.DAO\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.xml
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.DAO\obj\Debug\netcoreapp2.0\BCS.Directory.DAO.csprojResolveAssemblyReference.cache
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.DAO\obj\Debug\netcoreapp2.0\BCS.Directory.DAO.csproj.CoreCompileInputs.cache
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.DAO\obj\Debug\netcoreapp2.0\BCS.Directory.DAO.AssemblyInfoInputs.cache
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.DAO\obj\Debug\netcoreapp2.0\BCS.Directory.DAO.AssemblyInfo.cs
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.DAO\obj\Debug\netcoreapp2.0\BCS.Directory.DAO.csproj.CopyComplete
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.DAO\obj\Debug\netcoreapp2.0\BCS.Directory.DAO.dll
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.DAO\obj\Debug\netcoreapp2.0\BCS.Directory.DAO.pdb

@@ -1,0 +1,115 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Employee</h2>
+<form>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="form-group">
+                    <label for="name">First Name</label>
+                    <input type="text" class="form-control txt-fname">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="form-group">
+                    <label for="name">Last Name</label>
+                    <input type="text" class="form-control txt-lname">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="form-group">
+                    <label for="" class="font-size-12px">Birth date</label>
+                    <div class="input-group date" data-provide="datepicker">
+                        <input type="text" class="form-control txt-date-transact input-readonly" readonly>
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-th"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="form-group">
+                    <label for="price">Age</label>
+                    <input type="number" class="form-control txt-age" id="age" min="1">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="form-group">
+                    <label for="sel1">Civil Status:</label>
+                    <select class="form-control status-list" id="status">
+                        <option value="1">Single</option>
+                        <option value="2">Married</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="form-group">
+                    <label for="name">Languages Spoken</label>
+                    <input type="text" class="form-control txt-lalnguage-spoken">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="form-group">
+                    <label for="name">Country</label>
+                    <input type="text" class="form-control txt-country">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="form-group">
+                    <label for="name">State</label>
+                    <input type="text" class="form-control txt-state">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="form-group">
+                    <label for="name">Phone number</label>
+                    <input type="text" class="form-control txt-phone">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="form-group">
+                    <label for="sel1">User Type:</label>
+                    <select class="form-control user-type-list" id="user-type">
+                        <option value="1">Employee</option>
+                        <option value="2">Editor</option>
+                        <option value="2">Viewer</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="form-group">
+                    <label for="lbl-hobbies">Hobbies and Interests</label>
+                    <textarea class="form-control txt-hobbies" id="txt-hobbies" rows="3"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <a href="#" class="btn btn-primary btn-primary btn-save-employee">Save Employee</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>
+

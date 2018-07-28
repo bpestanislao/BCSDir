@@ -1,0 +1,14 @@
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.Service\obj\Debug\netcoreapp2.0\BCS.Directory.Service.csprojResolveAssemblyReference.cache
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.Service\obj\Debug\netcoreapp2.0\BCS.Directory.Service.csproj.CoreCompileInputs.cache
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.Service\obj\Debug\netcoreapp2.0\BCS.Directory.Service.AssemblyInfoInputs.cache
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.Service\obj\Debug\netcoreapp2.0\BCS.Directory.Service.AssemblyInfo.cs
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.Service\bin\Debug\netcoreapp2.0\BCS.Directory.Service.deps.json
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.Service\bin\Debug\netcoreapp2.0\BCS.Directory.Service.dll
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.Service\bin\Debug\netcoreapp2.0\BCS.Directory.CORE.dll
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.Service\bin\Debug\netcoreapp2.0\BCS.Directory.CORE.pdb
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.Service\obj\Debug\netcoreapp2.0\BCS.Directory.Service.csproj.CopyComplete
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.Service\bin\Debug\netcoreapp2.0\BCS.Directory.Service.pdb
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.Service\obj\Debug\netcoreapp2.0\BCS.Directory.Service.dll
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.Service\obj\Debug\netcoreapp2.0\BCS.Directory.Service.pdb
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.Service\bin\Debug\netcoreapp2.0\BCS.Directory.DAO.dll
+D:\bestanislao\BCS\Training\Project\BCS.Directory\BCS.Directory.Service\bin\Debug\netcoreapp2.0\BCS.Directory.DAO.pdb
