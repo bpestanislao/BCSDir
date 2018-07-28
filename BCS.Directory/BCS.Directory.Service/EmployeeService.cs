@@ -67,6 +67,8 @@ namespace BCS.Directory.Service
             _unitOfWork.Context.Entry(employee).Property(x => x.LanguagesSpoken).IsModified = true;
             _unitOfWork.Context.Entry(employee).Property(x => x.PhoneNumber).IsModified = true;
             _unitOfWork.Context.Entry(employee).Property(x => x.UserType).IsModified = true;
+            _unitOfWork.Context.Entry(employee).Property(x => x.HireDate).IsModified = true;
+            _unitOfWork.Context.Entry(employee).Property(x => x.Department).IsModified = true;
             _employeeRepository.Update(employee);
             _unitOfWork.Save();
             return employee.Id;

@@ -23,7 +23,6 @@ namespace BCS.Directory.APP.Controllers
             return View();
         }
 
-        //[HttpPost]
         public JsonResult AddEmployee([FromBody]EmployeeViewModel vm)
         {
             var map = EmployeeMapper.Convert(vm);
@@ -45,6 +44,13 @@ namespace BCS.Directory.APP.Controllers
             return Json(new { data = map });
         }
 
+        public JsonResult EditEmployee([FromBody]EmployeeViewModel vm)
+        {
+            var map = EmployeeMapper.Convert(vm);
+            var id = _employeeService.UpdateEmployee(map);
+            return Json(new { data = id });
+        }
+
         public JsonResult GetActiveEmployees()
         {
 
@@ -61,7 +67,7 @@ namespace BCS.Directory.APP.Controllers
                     var readTask = result.Content.ReadAsAsync<List<Employee>>();
                     readTask.Wait();
                     var map = EmployeeMapper.Convert(readTask.Result);
-                }                
+                }
             }
             return Json(new { data = "" });
         }
@@ -72,7 +78,7 @@ namespace BCS.Directory.APP.Controllers
             try
             {
                 var response = _employeeService.GetAllActiveEmployees();
-                var data = EmployeeMapper.Convert(response);         
+                var data = EmployeeMapper.Convert(response);
                 return Json(new { data = data });
             }
             catch (Exception e)
@@ -88,6 +94,19 @@ namespace BCS.Directory.APP.Controllers
                 var response = _employeeService.GetEmployeeById(id);
                 var mapData = EmployeeMapper.Convert(response);
                 return Json(new { data = mapData });
+            }
+            catch (Exception e)
+            {
+                return Json(new { IsSuccess = false });
+            }
+        }
+
+        public JsonResult DeleteEmployeeById(int id)
+        {
+            try
+            {
+                var response = _employeeService.DeleteEmployee(new Employee() { Id = id });
+                return Json(new { data = response });
             }
             catch (Exception e)
             {

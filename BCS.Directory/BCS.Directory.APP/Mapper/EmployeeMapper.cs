@@ -13,6 +13,7 @@ namespace BCS.Directory.APP.Mapper
         {
             return new Employee
             {
+                Id = employeeViewModel.Id,
                 Age = employeeViewModel.Age,
                 Address = employeeViewModel.Address,
                 Birthdate = employeeViewModel.Birthdate,
