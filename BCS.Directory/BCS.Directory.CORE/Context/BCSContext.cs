@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using BCS.Directory.CORE.Entity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -11,9 +12,10 @@ namespace BCS.Directory.CORE.Context
            : base(options)
         {
         }
-
+        public DbSet<Employee> Employee { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Employee>();
             base.OnModelCreating(modelBuilder);
         }
     }

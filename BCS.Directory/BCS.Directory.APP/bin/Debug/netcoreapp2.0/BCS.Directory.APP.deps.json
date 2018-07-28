@@ -29,7 +29,8 @@
           "Microsoft.AspNetCore.All": "2.0.8",
           "Microsoft.EntityFrameworkCore.Tools": "2.0.3",
           "Microsoft.NETCore.App": "2.0.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.4"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.4",
+          "System.Net.Http.Formatting": "4.0.0.0"
         },
         "runtime": {
           "BCS.Directory.APP.dll": {}
@@ -4090,6 +4091,14 @@
           "BCS.Directory.Service.dll": {}
         }
       },
+      "System.Net.Http.Formatting/4.0.0.0": {
+        "runtime": {
+          "System.Net.Http.Formatting.dll": {}
+        },
+        "compile": {
+          "System.Net.Http.Formatting.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.0.0": {
         "dependencies": {
           "Microsoft.NETCore.DotNetHostPolicy": "2.0.0",
@@ -6421,6 +6430,11 @@
     },
     "BCS.Directory.Service/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.Http.Formatting/4.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     },

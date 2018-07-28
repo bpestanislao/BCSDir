@@ -12,9 +12,9 @@ namespace BCS.Directory.CORE.Entity
 
         public string HobbiesAndInterest { get; set; }
 
-        public string CivilStatus { get; set; }
+        public int CivilStatus { get; set; }
 
-        public string Gender { get; set; }
+        public int Gender { get; set; }
 
         public string Address { get; set; }
 
@@ -33,6 +33,10 @@ namespace BCS.Directory.CORE.Entity
         public int UserType { get; set; }
 
         public bool IsActive { get; set; }
-        
+
+        public int Department { get; set; }
+
+        public DateTime HireDate { get; set; }
+
     }
 }

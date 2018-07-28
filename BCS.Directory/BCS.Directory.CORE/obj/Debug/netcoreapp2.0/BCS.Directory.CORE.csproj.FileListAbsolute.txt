@@ -15,7 +15,6 @@ D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\bin\De
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\bin\Debug\netcoreapp2.0\BCS.Directory.CORE.pdb
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.dll
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.xml
-D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\obj\Debug\netcoreapp2.0\BCS.Directory.CORE.csprojResolveAssemblyReference.cache
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\obj\Debug\netcoreapp2.0\BCS.Directory.CORE.csproj.CoreCompileInputs.cache
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\obj\Debug\netcoreapp2.0\BCS.Directory.CORE.AssemblyInfoInputs.cache
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\obj\Debug\netcoreapp2.0\BCS.Directory.CORE.AssemblyInfo.cs

@@ -28,4 +28,10 @@
     <Folder Include="Views\Shared\Employee\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\..\..\..\..\Repo\dotRez-BCS-main-MMB-API\packages\Microsoft.AspNet.WebApi.Client.4.0.30506.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

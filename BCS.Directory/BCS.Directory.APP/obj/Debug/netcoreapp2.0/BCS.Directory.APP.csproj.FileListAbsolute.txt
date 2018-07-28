@@ -36,3 +36,5 @@ D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\obj\Deb
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\obj\Debug\netcoreapp2.0\BCS.Directory.APP.csproj.CopyComplete
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\obj\Debug\netcoreapp2.0\BCS.Directory.APP.dll
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\obj\Debug\netcoreapp2.0\BCS.Directory.APP.pdb
+D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\bin\Debug\netcoreapp2.0\System.Net.Http.Formatting.dll
+D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.APP\bin\Debug\netcoreapp2.0\System.Net.Http.Formatting.xml

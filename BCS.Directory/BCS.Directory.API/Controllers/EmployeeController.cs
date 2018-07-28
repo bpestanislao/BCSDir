@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BCS.Directory.CORE.Entity;
 using BCS.Directory.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -24,6 +25,19 @@ namespace BCS.Directory.API.Controllers
         public string Get(int id)
         {
             return _employeeService.TestEmployee(id);
+        }
+
+        [HttpPost("SaveEmployee")]
+        public int SaveEmployee([FromBody]Employee employee)
+        {
+            return _employeeService.AddEmployee(employee);
+        }
+
+
+        [HttpGet("GetAllActiveEmployees")]
+        public List<Employee> GetAllActiveEmployees()
+        {
+            return _employeeService.GetAllActiveEmployees();
         }
     }
 

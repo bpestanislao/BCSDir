@@ -24,8 +24,36 @@ namespace BCS.Directory.APP.Mapper
                  LastName = employeeViewModel.LastName,
                  PhoneNumber = employeeViewModel.PhoneNumber,
                  State = employeeViewModel.State,
-                 UserType = employeeViewModel.UserType
+                 UserType = employeeViewModel.UserType,
+                 Department = employeeViewModel.Department,
+                 HireDate = employeeViewModel.HireDate,
             };
         }
+        public static List<EmployeeViewModel> Convert(List<Employee> employees)
+        {
+            List<EmployeeViewModel> mapData = new List<EmployeeViewModel>();
+            foreach (var item in employees)
+            {
+                mapData.Add(new EmployeeViewModel() {
+                    Age = item.Age,
+                    Address = item.Address,
+                    Birthdate = item.Birthdate,
+                    CivilStatus = item.CivilStatus,
+                    Country = item.Country,
+                    FirstName = item.FirstName,
+                    Gender = item.Gender,
+                    HobbiesAndInterest = item.HobbiesAndInterest,
+                    LanguagesSpoken = item.LanguagesSpoken,
+                    LastName = item.LastName,
+                    PhoneNumber = item.PhoneNumber,
+                    State = item.State,
+                    UserType = item.UserType,
+                    Department = item.Department,
+                    HireDate = item.HireDate,
+                });
+            }
+            return mapData;
+        }
+
     }
 }
