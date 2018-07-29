@@ -30,8 +30,6 @@ namespace BCS.Directory.CORE.Entity
 
         public int PhoneNumber { get; set; }
 
-        public int UserType { get; set; }
-
         public bool IsActive { get; set; }
 
         public int Department { get; set; }

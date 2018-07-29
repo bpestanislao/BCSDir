@@ -15,6 +15,10 @@ using BCS.Directory.APP.Models.AccountViewModels;
 using BCS.Directory.APP.Services;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using BCS.Directory.APP.Data;
+using BCS.Directory.Service;
+using BCS.Directory.APP.Mapper;
+using BCS.Directory.APP.Models.ViewModels;
+using BCS.Directory.APP.Utilities;
 
 namespace BCS.Directory.APP.Controllers
 {
@@ -26,17 +30,20 @@ namespace BCS.Directory.APP.Controllers
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly IEmailSender _emailSender;
         private readonly ILogger _logger;
+        private readonly ISystemParameterService _systemParameterService;
 
         public AccountController(
             UserManager<ApplicationUser> userManager,
             SignInManager<ApplicationUser> signInManager,
             IEmailSender emailSender,
-            ILogger<AccountController> logger)
+            ILogger<AccountController> logger,
+            ISystemParameterService systemParameterService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _emailSender = emailSender;
             _logger = logger;
+            _systemParameterService = systemParameterService;
         }
 
         [TempData]
@@ -58,9 +65,7 @@ namespace BCS.Directory.APP.Controllers
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model, string returnUrl = null)
-        {
-        
-
+        {       
             ViewData["ReturnUrl"] = returnUrl;
             if (ModelState.IsValid)
             {
@@ -69,8 +74,11 @@ namespace BCS.Directory.APP.Controllers
                 var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
+                    var response = await _userManager.FindByNameAsync(model.Email);
+                    HttpContext.Session.SetObject("UserSession", response);
+
                     _logger.LogInformation("User logged in.");
-                    return RedirectToLocal(returnUrl);
+                    return RedirectToAction("Index", "Employee");
                 }
                 if (result.RequiresTwoFactor)
                 {
@@ -213,6 +221,17 @@ namespace BCS.Directory.APP.Controllers
         [AllowAnonymous]
         public IActionResult Register(string returnUrl = null)
         {
+            var userRoles = _systemParameterService.GetSystemParameterByFieldGroup("UserRole");
+            if (userRoles != null)
+            {
+                var mapUseRoles = SystemParameterMapper.Convert(userRoles);
+                @ViewBag.ListOfRoles = mapUseRoles;
+            }
+            else
+            {
+                @ViewBag.ListOfRoles = new List<SystemParameterViewModel>();
+            }
+           
             ViewData["ReturnUrl"] = returnUrl;
             return View();
         }
@@ -225,7 +244,7 @@ namespace BCS.Directory.APP.Controllers
             ViewData["ReturnUrl"] = returnUrl;
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, UserRoleId = model.UserRoleId };
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {

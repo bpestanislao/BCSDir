@@ -1,5 +1,5 @@
 ﻿var oTable = null;
-
+var userRoleId = "";
 function ValidateRequiredFields() {
     var empty = $('.row').parent().find("input").filter(function () {
         return this.value === "";
@@ -23,7 +23,6 @@ function MapEmployeeVM() {
         LastName: $('.txt-lname').val(),
         LanguagesSpoken: $('.txt-language').val(),
         PhoneNumber: $('.txt-phone').val(),
-        UserType: $('.user-type-list').val(),
         HireDate: $('.txt-hdate').val(),
         Department: $('.department').val(),
         Id: $('.empId').text(),
@@ -51,7 +50,11 @@ $(document).ready(function () {
                 url: '/Employee/AddEmployee/',
                 contentType: "application/json",
                 async: false,
-            }).done(function (data) {               
+            }).done(function (data) {
+                oTable.ajax.reload();
+                ResetFields();
+                GetUserRole();
+                $('.add-employee-div').css("display", "none");
             });
         }
     });
@@ -71,6 +74,9 @@ $(document).ready(function () {
                 contentType: "application/json",
                 async: false,
             }).done(function (data) {
+                ResetFields();
+                oTable.ajax.reload();
+                GetUserRole();
             });
         }
     });
@@ -86,14 +92,49 @@ $(document).ready(function () {
                 contentType: "application/json",
                 async: false,
             }).done(function (data) {
+                oTable.ajax.reload();              
+                $('.add-employee-div').css("display", "none");
+                ResetFields();
+                GetUserRole();  
             });
         }
     });
 
     $('.btn-update-employee').css("display", "none");
     $('.btn-delete-employee').css("display", "none");
+
+     GetUserRole();
 });
 
+function GetUserRole() {
+    $.ajax({
+        type: "POST",
+        url: '/Session/GetUserRoleId/',
+        contentType: "application/json",
+        async: false,
+    }).done(function (data) {
+        userRoleId = data.userRoleId;
+        if (userRoleId == "1" || userRoleId == "4") { 
+            //Admin and Editor
+            $('#view-add-employee').text("Add Employee");
+            $('.btn-action').css("display", "block");
+            $('.add-employee-div').css("display", "block");
+
+            $('.btn-update-employee').css("display", "none");
+            $('.btn-delete-employee').css("display", "none");
+            $('.btn-save-employee').css("display", "block");
+        }
+        else if (userRoleId == "2") {
+            //Employee
+        }
+        else if (userRoleId == "3") {
+            //Viewer
+            $('#view-add-employee').text("Employee Details");
+            $('.add-employee-div').css("display", "none");
+            $('.btn-action').css("display", "none");
+        }
+    });
+}
 
 function DtEmployee() {
     $('.tableManageOrder').DataTable({
@@ -156,6 +197,8 @@ $('#tbl-employee-view tbody').on('click', '.btn-view', function (e) {
         contentType: "application/json"
     }).done(function (result) {
         MapEmployeeDetails(result);
+        $('#view-add-employee').text("Employee Details");
+        $('.add-employee-div').css("display", "block");
         $('.btn-update-employee').css("display", "block");
         $('.btn-delete-employee').css("display", "block");
         $('.btn-save-employee').css("display", "none");
@@ -174,7 +217,6 @@ function MapEmployeeDetails(result) {
     $('.txt-country').val(response.country);
     $('.txt-state').val(response.state);
     $('.txt-phone').val(response.phoneNumber);
-    $('.user-type-list').val(response.userType);
     $('.txt-hdate').val(response.hireDate);
     $('.department').val(response.department);
     $('.txt-address').val(response.address);
@@ -186,4 +228,29 @@ function MapEmployeeDetails(result) {
     $('#chkAddress').prop('checked', response.employeeSettingsViewModel.isAddressPrivate);
     $('#chkCS').prop('checked', response.employeeSettingsViewModel.isCivilStatusPrivate);
     $('.empSettingsId').text(response.employeeSettingsViewModel.id);
+}
+
+
+function ResetFields() {
+    $('.empId').text("");
+    $('.txt-fname').val("");
+    $('.txt-lname').val("");
+    $('.txt-bdate').val("");
+    $('.txt-age').val("");
+    $('.status-list').val("1");
+    $('.txt-language').val("");
+    $('.txt-country').val("");
+    $('.txt-state').val("");
+    $('.txt-phone').val("");
+    $('.txt-hdate').val("");
+    $('.department').val("1");
+    $('.txt-address').val("");
+    $(".gender").val("1");
+    $(".txt-hobbies").val("");
+    $('#chkHobbiesI').prop('checked', false);
+    $('#chkAge').prop('checked', false);
+    $('#chkBday').prop('checked', false);
+    $('#chkAddress').prop('checked', false);
+    $('#chkCS').prop('checked', false);
+    $('.empSettingsId').text("");
 }

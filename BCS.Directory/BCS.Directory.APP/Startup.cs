@@ -42,12 +42,15 @@ namespace BCS.Directory.APP
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
 
+            services.AddSession();
+
             services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+            app.UseSession();
             if (env.IsDevelopment())
             {
                 app.UseBrowserLink();
@@ -67,7 +70,7 @@ namespace BCS.Directory.APP
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Employee}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

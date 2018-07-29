@@ -26,7 +26,6 @@ namespace BCS.Directory.APP.Mapper
                 LastName = employeeViewModel.LastName,
                 PhoneNumber = employeeViewModel.PhoneNumber,
                 State = employeeViewModel.State,
-                UserType = employeeViewModel.UserType,
                 Department = employeeViewModel.Department,
                 HireDate = employeeViewModel.HireDate,
                 EmployeeSettings = new EmployeeSettings
@@ -61,7 +60,6 @@ namespace BCS.Directory.APP.Mapper
                     LastName = item.LastName,
                     PhoneNumber = item.PhoneNumber,
                     State = item.State,
-                    UserType = item.UserType,
                     Department = item.Department,
                     HireDate = item.HireDate,
                 });
@@ -86,7 +84,6 @@ namespace BCS.Directory.APP.Mapper
                 LastName = employee.LastName,
                 PhoneNumber = employee.PhoneNumber,
                 State = employee.State,
-                UserType = employee.UserType,
                 Department = employee.Department,
                 HireDate = employee.HireDate,
                 EmployeeSettingsViewModel = new EmployeeSettingsViewModel {

@@ -23,4 +23,5 @@ D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\obj\De
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\obj\Debug\netcoreapp2.0\BCS.Directory.CORE.pdb
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\bin\Debug\netcoreapp2.0\Newtonsoft.Json.dll
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\bin\Debug\netcoreapp2.0\Newtonsoft.Json.xml
-D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\obj\Debug\netcoreapp2.0\BCS.Directory.CORE.csprojResolveAssemblyReference.cache
+D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Http.Features.dll
+D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Http.Features.xml

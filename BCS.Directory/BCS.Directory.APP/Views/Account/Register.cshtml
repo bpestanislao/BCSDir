@@ -26,6 +26,12 @@
                 <input asp-for="ConfirmPassword" class="form-control" />
                 <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
             </div>
+            <div class="form-group">
+                <label for="inputdefault">User Roles</label>
+                <select asp-for="UserRoleId" id="ListOfRoles"
+                        class="form-control"
+                        asp-items="@(new SelectList(@ViewBag.ListOfRoles,"FieldId", "FieldValue"))"></select>
+            </div>
             <button type="submit" class="btn btn-default">Register</button>
         </form>
     </div>
