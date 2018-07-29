@@ -36,7 +36,8 @@ namespace BCS.Directory.APP.Mapper
                     IsAgePrivate = employeeViewModel.EmployeeSettingsViewModel.IsAgePrivate,
                     IsBirthDatePrivate = employeeViewModel.EmployeeSettingsViewModel.IsBirthDatePrivate,
                     IsCivilStatusPrivate = employeeViewModel.EmployeeSettingsViewModel.IsCivilStatusPrivate,
-                    IsHobbiesAndInterestPrivate = employeeViewModel.EmployeeSettingsViewModel.IsHobbiesAndInterestPrivate
+                    IsHobbiesAndInterestPrivate = employeeViewModel.EmployeeSettingsViewModel.IsHobbiesAndInterestPrivate,
+                    Id = employeeViewModel.EmployeeSettingsViewModel.Id,
                 }
             };
         }

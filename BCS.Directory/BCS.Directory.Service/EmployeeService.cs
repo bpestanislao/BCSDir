@@ -75,6 +75,15 @@ namespace BCS.Directory.Service
             _unitOfWork.Context.Entry(employee).Property(x => x.HireDate).IsModified = true;
             _unitOfWork.Context.Entry(employee).Property(x => x.Department).IsModified = true;
             _employeeRepository.Update(employee);
+
+            _unitOfWork.Context.Attach(employee.EmployeeSettings);
+            _unitOfWork.Context.Entry(employee.EmployeeSettings).Property(x => x.IsAddressPrivate).IsModified = true;
+            _unitOfWork.Context.Entry(employee.EmployeeSettings).Property(x => x.IsBirthDatePrivate).IsModified = true;
+            _unitOfWork.Context.Entry(employee.EmployeeSettings).Property(x => x.IsAgePrivate).IsModified = true;
+            _unitOfWork.Context.Entry(employee.EmployeeSettings).Property(x => x.IsHobbiesAndInterestPrivate).IsModified = true;
+            _unitOfWork.Context.Entry(employee.EmployeeSettings).Property(x => x.IsCivilStatusPrivate).IsModified = true;
+            _employeeSettingsRepository.Update(employee.EmployeeSettings);
+
             _unitOfWork.Save();
             return employee.Id;
         }

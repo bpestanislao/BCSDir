@@ -28,6 +28,7 @@ function MapEmployeeVM() {
         Department: $('.department').val(),
         Id: $('.empId').text(),
         EmployeeSettingsViewModel: {
+            Id: $('.empSettingsId').text(),
             IsBirthDatePrivate: $('#chkBday').prop('checked'),
             IsAgePrivate: $('#chkAge').prop('checked'),
             IsHobbiesAndInterestPrivate: $('#chkHobbiesI').prop('checked'),
@@ -179,4 +180,10 @@ function MapEmployeeDetails(result) {
     $('.txt-address').val(response.address);
     $(".gender").val(response.gender);
     $(".txt-hobbies").val(response.hobbiesAndInterest);
+    $('#chkHobbiesI').prop('checked', response.employeeSettingsViewModel.isHobbiesAndInterestPrivate);
+    $('#chkAge').prop('checked', response.employeeSettingsViewModel.isAgePrivate);
+    $('#chkBday').prop('checked', response.employeeSettingsViewModel.isBirthDatePrivate);
+    $('#chkAddress').prop('checked', response.employeeSettingsViewModel.isAddressPrivate);
+    $('#chkCS').prop('checked', response.employeeSettingsViewModel.isCivilStatusPrivate);
+    $('.empSettingsId').text(response.employeeSettingsViewModel.id);
 }
