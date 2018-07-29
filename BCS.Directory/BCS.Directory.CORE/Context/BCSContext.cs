@@ -14,10 +14,12 @@ namespace BCS.Directory.CORE.Context
         }
         public DbSet<Employee> Employee { get; set; }
         public DbSet<EmployeeSettings> EmployeeSettings { get; set; }
+        public DbSet<SystemParameter> SystemParameter { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Employee>();
             modelBuilder.Entity<EmployeeSettings>();
+            modelBuilder.Entity<SystemParameter>();
             base.OnModelCreating(modelBuilder);
         }
     }

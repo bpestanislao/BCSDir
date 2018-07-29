@@ -12,11 +12,19 @@ namespace BCS.Directory.Service
     {
         public static void ConfigureServices(IServiceCollection services)
         {
+            #region Service Registration
             services.AddTransient<IEmployeeService, EmployeeService>();
+            services.AddTransient<ISystemParameterService, SystemParameterService>();
+            #endregion
+
+
+            #region DAO Registration
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient(typeof(IGenericRepository<EntityBase<int>, int>), typeof(GenericRepository<EntityBase<int>, int>));
             services.AddTransient<IEmployeeRepository, EmployeeRepository>();
             services.AddTransient<IEmployeeSettingsRepository, EmployeeSettingsRepository>();
+            services.AddTransient<ISystemParameterRepository, SystemParameterRepository>();
+            #endregion
         }
 
     }

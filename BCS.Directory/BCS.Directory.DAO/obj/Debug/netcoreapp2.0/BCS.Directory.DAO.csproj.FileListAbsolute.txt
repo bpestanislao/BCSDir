@@ -26,3 +26,5 @@ D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.DAO\obj\Deb
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.DAO\obj\Debug\netcoreapp2.0\BCS.Directory.DAO.csproj.CopyComplete
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.DAO\obj\Debug\netcoreapp2.0\BCS.Directory.DAO.dll
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.DAO\obj\Debug\netcoreapp2.0\BCS.Directory.DAO.pdb
+D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.DAO\bin\Debug\netcoreapp2.0\Newtonsoft.Json.dll
+D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.DAO\bin\Debug\netcoreapp2.0\Newtonsoft.Json.xml

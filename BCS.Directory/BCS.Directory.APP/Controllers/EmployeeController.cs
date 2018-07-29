@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using BCS.Directory.APP.Mapper;
 using BCS.Directory.APP.Models.ViewModels;
 using BCS.Directory.CORE.Entity;
+using BCS.Directory.CORE.Utilities;
 using BCS.Directory.Service;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,6 +21,7 @@ namespace BCS.Directory.APP.Controllers
         }
         public IActionResult Index()
         {
+            Language.GetLabel("");
             return View();
         }
 
