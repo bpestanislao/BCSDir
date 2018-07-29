@@ -29,6 +29,15 @@ namespace BCS.Directory.APP.Mapper
                 UserType = employeeViewModel.UserType,
                 Department = employeeViewModel.Department,
                 HireDate = employeeViewModel.HireDate,
+                EmployeeSettings = new EmployeeSettings
+                {
+                    EmployeeId = employeeViewModel.Id,
+                    IsAddressPrivate = employeeViewModel.EmployeeSettingsViewModel.IsAddressPrivate,
+                    IsAgePrivate = employeeViewModel.EmployeeSettingsViewModel.IsAgePrivate,
+                    IsBirthDatePrivate = employeeViewModel.EmployeeSettingsViewModel.IsBirthDatePrivate,
+                    IsCivilStatusPrivate = employeeViewModel.EmployeeSettingsViewModel.IsCivilStatusPrivate,
+                    IsHobbiesAndInterestPrivate = employeeViewModel.EmployeeSettingsViewModel.IsHobbiesAndInterestPrivate
+                }
             };
         }
         public static List<EmployeeViewModel> Convert(List<Employee> employees)
@@ -78,7 +87,16 @@ namespace BCS.Directory.APP.Mapper
                 State = employee.State,
                 UserType = employee.UserType,
                 Department = employee.Department,
-                HireDate = employee.HireDate
+                HireDate = employee.HireDate,
+                EmployeeSettingsViewModel = new EmployeeSettingsViewModel {
+                    Id = employee.EmployeeSettings.Id,
+                    EmployeeId = employee.EmployeeSettings.EmployeeId,
+                    IsHobbiesAndInterestPrivate = employee.EmployeeSettings.IsHobbiesAndInterestPrivate,
+                    IsCivilStatusPrivate = employee.EmployeeSettings.IsCivilStatusPrivate,
+                    IsBirthDatePrivate = employee.EmployeeSettings.IsBirthDatePrivate,
+                    IsAddressPrivate = employee.EmployeeSettings.IsAddressPrivate,
+                    IsAgePrivate = employee.EmployeeSettings.IsAgePrivate,
+                }
             };
         }
     }

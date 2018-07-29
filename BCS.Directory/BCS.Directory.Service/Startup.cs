@@ -16,6 +16,7 @@ namespace BCS.Directory.Service
             services.AddTransient<IUnitOfWork, UnitOfWork>();
             services.AddTransient(typeof(IGenericRepository<EntityBase<int>, int>), typeof(GenericRepository<EntityBase<int>, int>));
             services.AddTransient<IEmployeeRepository, EmployeeRepository>();
+            services.AddTransient<IEmployeeSettingsRepository, EmployeeSettingsRepository>();
         }
 
     }

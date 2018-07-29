@@ -38,5 +38,7 @@ namespace BCS.Directory.CORE.Entity
 
         public DateTime HireDate { get; set; }
 
+        public EmployeeSettings EmployeeSettings { get; set; }
+
     }
 }

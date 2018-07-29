@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace BCS.Directory.APP.Models.ViewModels
 {
-    public class EmployeeViewModel : Employee
+    public class EmployeeSettingsViewModel : EmployeeSettings
     {
-        public EmployeeSettingsViewModel EmployeeSettingsViewModel { get; set; }
     }
 }

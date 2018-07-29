@@ -26,13 +26,18 @@ function MapEmployeeVM() {
         UserType: $('.user-type-list').val(),
         HireDate: $('.txt-hdate').val(),
         Department: $('.department').val(),
-        Id: $('.empId').text()
+        Id: $('.empId').text(),
+        EmployeeSettingsViewModel: {
+            IsBirthDatePrivate: $('#chkBday').prop('checked'),
+            IsAgePrivate: $('#chkAge').prop('checked'),
+            IsHobbiesAndInterestPrivate: $('#chkHobbiesI').prop('checked'),
+            IsCivilStatusPrivate: $('#chkCS').prop('checked'),
+            IsAddressPrivate: $('#chkAddress').prop('checked'),
+        }
     }
 }
 
 $(document).ready(function () {
- 
-
     $('.btn-save-employee').click(function () {
         if (ValidateRequiredFields() == "error") {
             alert("All fields are required!");

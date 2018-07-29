@@ -10,11 +10,14 @@ namespace BCS.Directory.Service
     public class EmployeeService : IEmployeeService
     {
         IEmployeeRepository _employeeRepository;
+        IEmployeeSettingsRepository _employeeSettingsRepository;
         IUnitOfWork _unitOfWork;
         public EmployeeService(IEmployeeRepository employeeRepository
+                              , IEmployeeSettingsRepository employeeSettingsRepository
                               , IUnitOfWork unitOfWork)
         {
             _employeeRepository = employeeRepository;
+            _employeeSettingsRepository = employeeSettingsRepository;
             _unitOfWork = unitOfWork;
         }
 
@@ -22,6 +25,8 @@ namespace BCS.Directory.Service
         {
             employee.IsActive = true;
             _employeeRepository.Insert(employee);
+
+            _employeeSettingsRepository.Insert(employee.EmployeeSettings);
             _unitOfWork.Save();
             return employee.Id;
         }
@@ -43,7 +48,7 @@ namespace BCS.Directory.Service
 
         public Employee GetEmployeeById(int id)
         {
-            return _employeeRepository.GetById(id);
+            return _employeeRepository.GetFirstOrDefault(x => x.Id == id, x => x.EmployeeSettings);
         }
 
         public string TestEmployee(int id)

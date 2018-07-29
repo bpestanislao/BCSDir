@@ -21,4 +21,3 @@ D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\obj\De
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\obj\Debug\netcoreapp2.0\BCS.Directory.CORE.csproj.CopyComplete
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\obj\Debug\netcoreapp2.0\BCS.Directory.CORE.dll
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\obj\Debug\netcoreapp2.0\BCS.Directory.CORE.pdb
-D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\obj\Debug\netcoreapp2.0\BCS.Directory.CORE.csprojResolveAssemblyReference.cache
