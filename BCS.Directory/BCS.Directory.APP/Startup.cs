@@ -13,6 +13,7 @@ using BCS.Directory.APP.Models;
 using BCS.Directory.APP.Services;
 using BCS.Directory.CORE.Context;
 using BCS.Directory.Service;
+using BCS.Directory.APP.APIService;
 
 namespace BCS.Directory.APP
 {
@@ -41,6 +42,7 @@ namespace BCS.Directory.APP
             
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
+            services.AddTransient<IBCSDirectoryService, BCSDirectoryService>();
 
             services.AddSession();
 

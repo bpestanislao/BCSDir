@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+using BCS.Directory.APP.APIService;
 using BCS.Directory.APP.Mapper;
 using BCS.Directory.APP.Models.ViewModels;
 using BCS.Directory.CORE.Entity;
-using BCS.Directory.CORE.Utilities;
 using BCS.Directory.Service;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,35 +15,27 @@ namespace BCS.Directory.APP.Controllers
     public class EmployeeController : Controller
     {
         IEmployeeService _employeeService;
-        public EmployeeController(IEmployeeService employeeService)
+        IBCSDirectoryService _bCSDirectoryService;
+        public EmployeeController(IEmployeeService employeeService,
+                                IBCSDirectoryService bCSDirectoryService)
         {
             _employeeService = employeeService;
+            _bCSDirectoryService = bCSDirectoryService;
         }
         public IActionResult Index()
         {
-            Language.GetLabel("");
+            var response = _bCSDirectoryService.GetCountry();            
+            @ViewBag.Countries = CountryMapper.Convert(response);
             return View();
         }
+
+
 
         public JsonResult AddEmployee([FromBody]EmployeeViewModel vm)
         {
             var map = EmployeeMapper.Convert(vm);
-
-            using (var client = new HttpClient())
-            {
-                client.BaseAddress = new Uri("http://localhost:57110/api/Employee/");
-
-                //HTTP POST
-                var postTask = client.PostAsJsonAsync<Employee>("SaveEmployee", map);
-                postTask.Wait();
-
-                var result = postTask.Result;
-                if (result.IsSuccessStatusCode)
-                {
-                    return Json(new { data = map });
-                }
-            }
-            return Json(new { data = map });
+            var response = _bCSDirectoryService.AddEmployee(map);
+            return Json(new { data = response });
         }
 
         public JsonResult EditEmployee([FromBody]EmployeeViewModel vm)
@@ -59,7 +51,6 @@ namespace BCS.Directory.APP.Controllers
             using (var client = new HttpClient())
             {
                 client.BaseAddress = new Uri("http://localhost:57110/api/Employee/");
-                //HTTP GET
                 var responseTask = client.GetAsync("GetAllActiveEmployees");
                 responseTask.Wait();
 

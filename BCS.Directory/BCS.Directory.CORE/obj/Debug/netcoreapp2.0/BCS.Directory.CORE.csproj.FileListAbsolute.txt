@@ -25,3 +25,4 @@ D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\bin\De
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\bin\Debug\netcoreapp2.0\Newtonsoft.Json.xml
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Http.Features.dll
 D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\bin\Debug\netcoreapp2.0\Microsoft.AspNetCore.Http.Features.xml
+D:\bestanislao\BCS\Training\Project\Repo\BCS.Directory\BCS.Directory.CORE\obj\Debug\netcoreapp2.0\BCS.Directory.CORE.csprojResolveAssemblyReference.cache
