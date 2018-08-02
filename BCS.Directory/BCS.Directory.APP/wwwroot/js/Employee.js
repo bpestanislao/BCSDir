@@ -103,7 +103,22 @@ $(document).ready(function () {
     $('.btn-update-employee').css("display", "none");
     $('.btn-delete-employee').css("display", "none");
 
-     GetUserRole();
+    GetUserRole();
+
+    $('.btn-add-new-employee').click(function () {
+        ResetFields();
+        $('.btn-delete-employee').css("display", "none");
+        $('.btn-update-employee').css("display", "none");
+        $('.btn-save-employee').css("display", "block");
+        $('.view-employee').css("display", "none");
+        $('.add-employee-div').css("display", "block");
+    });
+
+    $('.btn-view-list-employee').click(function () {
+        ResetFields();
+        $('.add-employee-div').css("display", "none");
+        $('.view-employee').css("display", "block");
+    });
 });
 
 function GetUserRole() {

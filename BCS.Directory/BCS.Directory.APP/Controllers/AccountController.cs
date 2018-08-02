@@ -22,7 +22,7 @@ using BCS.Directory.APP.Utilities;
 
 namespace BCS.Directory.APP.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [Route("[controller]/[action]")]
     public class AccountController : Controller
     {

@@ -18,7 +18,7 @@ namespace BCS.Directory.APP.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            return RedirectToAction("Login","Account");
         }
 
         public IActionResult About()

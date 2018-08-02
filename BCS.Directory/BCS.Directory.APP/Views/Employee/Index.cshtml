@@ -3,16 +3,32 @@
     ViewData["Title"] = "Index";
 }
 
-<h2>Employee</h2>
+<br />
 <form>
     <div class="container-fluid">
-
         <div class="row">
+            <div class="col-xs-12 col-sm-2 col-md-2">
+                <div class="form-group">
+                    <a href="#" class="btn btn-primary btn-primary btn-add-new-employee">Add new employee</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-2">
+                <div class="form-group">
+                    <a href="#" class="btn btn-primary btn-primary btn-view-list-employee">View Employee List</a>
+                </div>
+            </div>
+        </div>
+        <div class="row view-employee">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 @Html.Partial("_ViewEmployee")
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <hr />
+            </div>
+        </div>
         <div class="add-employee-div">
             @Html.Partial("_AddEmployee")
         </div>
